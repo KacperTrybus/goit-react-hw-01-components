@@ -1,0 +1,38 @@
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.friend-item {
+  color: black;
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  border: 2px black solid;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+}
+
+.friend-avatar {
+  width: 90px;
+  height: 90px;
+}
+
+.status {
+  border: 10px red solid;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  margin-left: 10px;
+}
+
+.status-offline {
+  background-color: red;
+}
+
+.status-online {
+  background-color: green;
+  border-color: green;
+}
