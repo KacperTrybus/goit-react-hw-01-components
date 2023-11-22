@@ -10,7 +10,7 @@
   color: white;
 }
 
-.table-head-row {
+th {
   padding: 10px 50px;
 }
 td {
