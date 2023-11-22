@@ -1,0 +1,25 @@
+.trans-history {
+  border: 1px grey solid;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.table-head {
+  text-transform: uppercase;
+
+  background-color: rgb(89, 204, 204);
+  color: white;
+}
+
+.table-head-row {
+  padding: 10px 50px;
+}
+td {
+  text-align: center;
+  padding: 8px 0px;
+  border: 1px lightblue solid;
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(158, 158, 158);
+}

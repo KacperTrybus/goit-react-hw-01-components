@@ -1,32 +1,25 @@
 import propTypes from 'prop-types';
 import transactions from '../Transactions/transactions.json';
+import '../Transactions/Transactions.css';
 
 export const TransactionHistory = ({ items }) => {
   return (
     <>
-      <table className="transaction-history">
-        <thead>
+      <table className="trans-history">
+        <thead className="table-head">
           <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
+            <th className="table-head-row">Type</th>
+            <th className="table-head-row">Amount</th>
+            <th className="table-head-row">Currency</th>
           </tr>
         </thead>
 
         <tbody>
           {transactions.map(transaction => (
             <tr key={transaction.id}>
-              <td>{transaction.type}</td>
-              <td>{transaction.amount}</td>
-              <td>{transaction.currency}</td>
-            </tr>
-          ))}
-
-          {transactions.map(transaction => (
-            <tr key={transaction.id}>
-              <td>{transaction.type}</td>
-              <td>{transaction.amount}</td>
-              <td>{transaction.currency}</td>
+              <td className="dd">{transaction.type}</td>
+              <td className="dd">{transaction.amount}</td>
+              <td className="dd">{transaction.currency}</td>
             </tr>
           ))}
         </tbody>

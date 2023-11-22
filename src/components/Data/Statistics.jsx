@@ -1,17 +1,16 @@
 import propTypes from 'prop-types';
-import data from '../Data/data.json';
 import '../Data/Statistics.css';
-const firstDataPercent = data[0].percentage;
-const secondDataPercent = data[1].percentage;
-const thirdDataPercent = data[2].percentage;
-const fourthDataPercent = data[3].percentage;
-
-const firstDataTitle = data[0].label;
-const secondDataTitle = data[1].label;
-const thirdDataTitle = data[2].label;
-const fourthDataTitle = data[3].label;
 
 export const Stats = ({ title, statistics }) => {
+  const firstDataPercent = statistics[0].percentage;
+  const secondDataPercent = statistics[1].percentage;
+  const thirdDataPercent = statistics[2].percentage;
+  const fourthDataPercent = statistics[3].percentage;
+
+  const firstDataTitle = statistics[0].label;
+  const secondDataTitle = statistics[1].label;
+  const thirdDataTitle = statistics[2].label;
+  const fourthDataTitle = statistics[3].label;
   return (
     <div>
       <section className="statistics">
